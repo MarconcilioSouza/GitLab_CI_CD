@@ -8,8 +8,6 @@ Curso do Git Lab CI CD
     sudo docker rmi -f $(sudo docker images -aq)
 
 ##### Remover o gitlab runner
-
-
     sudo gitlab-runner uninstall
     sudo rm -rf /usr/local/bin/gitlab-runner
     sudo userdel gitlab-runner
@@ -45,7 +43,7 @@ Curso do Git Lab CI CD
 
 
 ##### Acesso gitlab local
-- http://192.168.15.70:80
+- http://localhost:80
 
 ##### Obter a senha root do git primeiro acesso
     sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
