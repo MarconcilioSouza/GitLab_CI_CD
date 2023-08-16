@@ -25,7 +25,7 @@ Curso do Git Lab CI CD
 - sudo docker ps -a
 
 ### Instalar o GitLab
-´´´
+
 
     sudo mkdir -p /storage/docker-homol/deploy/gitlab/{data,logs,config}
     
@@ -40,7 +40,7 @@ Curso do Git Lab CI CD
       -v /storage/docker-homol/deploy/gitlab/config:/etc/gitlab \
       --shm-size 256m \
       gitlab/gitlab-ce:16.1.4-ce.0
-´´´ 
+
 
 ### Acesso gitlab local
 - http://192.168.15.70:80
