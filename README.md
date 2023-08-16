@@ -32,7 +32,7 @@ Curso do Git Lab CI CD
 -   -p "80:80" \
 -   -p "443:443" \
 -   --name gitlab \
--   --hostname gitlab.local \
+-   --hostname 192.168.15.70 \
 -   -v /storage/docker-homol/deploy/gitlab/data:/var/opt/gitlab \
 -   -v /storage/docker-homol/deploy/gitlab/logs:/var/log/gitlab \
 -   -v /storage/docker-homol/deploy/gitlab/config:/etc/gitlab \
@@ -41,3 +41,7 @@ Curso do Git Lab CI CD
 
 ### Acesso gitlab local
 - http://192.168.15.70:80
+
+### Obter a senha root do git primeiro acesso
+- sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+- usuário -> root
