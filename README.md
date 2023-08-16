@@ -7,6 +7,9 @@ Curso do Git Lab CI CD
 ##### Deletar todas as imagem do docker 
     sudo docker rmi -f $(sudo docker images -aq)
 
+##### Para remover um container
+    docker container rm <container ID>
+
 ##### Remover o gitlab runner
     sudo gitlab-runner uninstall
     sudo rm -rf /usr/local/bin/gitlab-runner
