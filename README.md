@@ -8,11 +8,12 @@ Curso do Git Lab CI CD
  sudo docker rmi -f $(sudo docker images -aq)
 
 ### Remover o gitlab runner
+´´´
  sudo gitlab-runner uninstall
  sudo rm -rf /usr/local/bin/gitlab-runner
  sudo userdel gitlab-runner
  sudo rm -rf /home/gitlab-runner/
-
+´´´
 ### Instalando o gitlab-runner
  curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb"
  sudo dpkg -i gitlab-runner_amd64.deb
