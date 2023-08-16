@@ -26,6 +26,7 @@ Curso do Git Lab CI CD
 
 ### Instalar o GitLab
 ´´´
+
     sudo mkdir -p /storage/docker-homol/deploy/gitlab/{data,logs,config}
     
     sudo docker run -dit \
