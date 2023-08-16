@@ -1,4 +1,4 @@
-# GitLab_CI_CD
+# GitLab CI CD
 Curso do Git Lab CI CD
 
 ##### Mostrar todas as imagem do docker 
