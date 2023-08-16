@@ -1,13 +1,13 @@
 # GitLab_CI_CD
 Curso do Git Lab CI CD
 
-### Mostrar todas as imagem do docker 
+##### Mostrar todas as imagem do docker 
     sudo docker images
 
-### Deletar todas as imagem do docker 
+##### Deletar todas as imagem do docker 
     sudo docker rmi -f $(sudo docker images -aq)
 
-### Remover o gitlab runner
+##### Remover o gitlab runner
 
 
     sudo gitlab-runner uninstall
@@ -15,18 +15,18 @@ Curso do Git Lab CI CD
     sudo userdel gitlab-runner
     sudo rm -rf /home/gitlab-runner/0
       
-### Instalando o gitlab-runner
+##### Instalando o gitlab-runner
     curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb"
     sudo dpkg -i gitlab-runner_amd64.deb
 
-### Start / Stop
+##### Start / Stop
     sudo gitlab-runner start
     sudo gitlab-runner stop
 
-### Mostrar os containner ativos 
+##### Mostrar os containner ativos 
     sudo docker ps -a
 
-### Instalar o GitLab
+##### Instalar o GitLab
 
 
     sudo mkdir -p /storage/docker-homol/deploy/gitlab/{data,logs,config}
@@ -44,9 +44,9 @@ Curso do Git Lab CI CD
       gitlab/gitlab-ce:16.1.4-ce.0
 
 
-### Acesso gitlab local
+##### Acesso gitlab local
 - http://192.168.15.70:80
 
-### Obter a senha root do git primeiro acesso
+##### Obter a senha root do git primeiro acesso
     sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
     usuário -> root
