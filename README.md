@@ -89,7 +89,7 @@ Curso do Git Lab CI CD
 ##### start gitlab-runner
     sudo systemctl restart gitlab-runner
 ##### adicionar enable para o gitlab-runner inicia junto com o SO
-    sudo systemclt enable gitlab-runner
+    sudo systemctl enable gitlab-runner
 
 ##### reiniciar o container
     sudo docker restart gitlab

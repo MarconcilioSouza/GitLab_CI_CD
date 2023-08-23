@@ -3,15 +3,16 @@
 sudo mkdir -p /storage/docker-homol/deploy/gitlab/{data,logs,config}
 
 sudo docker run -dit \
-  -p "2222:22" \
-  -p "80:80" \
-  -p "443:443" \
+  -p "2221:22" \
+  -p "3001:80" \
+  -p "4001:443" \
   --name gitlab \
-  --hostname IP \
-  -v /storage/docker-homol/deploy/gitlab/data:/var/opt/gitlab \
-  -v /storage/docker-homol/deploy/gitlab/logs:/var/log/gitlab \
-  -v /storage/docker-homol/deploy/gitlab/config:/etc/gitlab \
+  --restart always \
+  --hostname 192.168.15.70 \
+  --volume $GITLAB_HOME/config:/etc/gitlab \
+  --volume $GITLAB_HOME/logs:/var/log/gitlab \
+  --volume $GITLAB_HOME/data:/var/opt/gitlab \
   --shm-size 256m \
-  gitlab/gitlab-ce:16.1.4-ce.0
+  gitlab/gitlab-ee:latest
 
 # REFERENCIA: https://docs.gitlab.com/ee/install/docker.html
