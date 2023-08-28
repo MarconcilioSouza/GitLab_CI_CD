@@ -114,7 +114,7 @@ build_a:
     - docker
 
 test_a:
-  needs: [build_a]
+  image: [build_a]
   script:
     - docker run -dit --name teste ubuntu
   tags:
